@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="500.0" style="-fx-background-color: #4682B4;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.oscarmencos.controller.TelefonoClienteController">
+   <children>
+      <Label layoutX="167.0" layoutY="22.0" prefHeight="25.0" prefWidth="167.0" text="Telefono Clientes" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="58.0" layoutY="96.0" text="Numero" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="58.0" layoutY="141.0" text="Descripcion" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="58.0" layoutY="183.0" text="Codigo Cliente" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtNumero" editable="false" layoutX="254.0" layoutY="93.0" prefHeight="25.0" prefWidth="186.0" />
+      <TextField fx:id="txtDescripcion" editable="false" layoutX="254.0" layoutY="138.0" prefHeight="25.0" prefWidth="186.0" />
+      <ComboBox fx:id="cmbCliente" disable="true" layoutX="254.0" layoutY="183.0" prefHeight="25.0" prefWidth="186.0" promptText="----------Codigo---------" />
+      <Button fx:id="btnNuevo" layoutX="130.0" layoutY="248.0" mnemonicParsing="false" onAction="#nuevo" prefHeight="38.0" prefWidth="90.0" text="Nuevo">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnEliminar" layoutX="310.0" layoutY="248.0" mnemonicParsing="false" onAction="#eliminar" prefHeight="38.0" prefWidth="90.0" text="Regresar">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

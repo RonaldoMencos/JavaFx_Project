@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="140.0" layoutY="14.0" text="Tabla Detalle Compra">
+         <font>
+            <Font name="Times New Roman" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="54.0" layoutY="79.0" text="Numero Documento">
+         <font>
+            <Font name="Times New Roman" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="cmbCodigo" layoutX="264.0" layoutY="110.0" prefHeight="25.0" prefWidth="264.0" promptText="Ingrese el costo unitario" />
+      <TableView layoutX="24.0" layoutY="228.0" prefHeight="187.0" prefWidth="553.0">
+        <columns>
+          <TableColumn prefWidth="126.0" text="Codigo" />
+          <TableColumn prefWidth="143.0" text="Descripcion" />
+            <TableColumn prefWidth="160.0" text="Cantidad" />
+            <TableColumn prefWidth="123.0" text="Precio" />
+            <TableColumn prefWidth="123.0" text="SubTotal" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnNuevo" layoutX="54.0" layoutY="453.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="93.0" text="Nuevo" />
+      <Button fx:id="btnEliminar" layoutX="187.0" layoutY="453.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="93.0" text="Eliminar" />
+      <Button fx:id="btnEditar" layoutX="333.0" layoutY="453.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="93.0" text="Editar" />
+      <Button fx:id="btnReporte" layoutX="472.0" layoutY="453.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="93.0" text="Reporte" />
+      <TextField fx:id="cmbCodigo1" layoutX="264.0" layoutY="146.0" prefHeight="25.0" prefWidth="264.0" promptText="Ingrese el sub-total" />
+      <TextField fx:id="cmbCodigo2" layoutX="20.0" layoutY="196.0" prefHeight="25.0" prefWidth="140.0" promptText="Ingrese la cantidad" />
+      <Label layoutX="54.0" layoutY="114.0" text="Proveedor">
+         <font>
+            <Font name="Times New Roman" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="54.0" layoutY="150.0" text="Fecha">
+         <font>
+            <Font name="Times New Roman" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="49.0" layoutY="178.0" text="Codigo Producto">
+         <font>
+            <Font name="Times New Roman" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="514.0" layoutY="415.0" text="Label" />
+      <TextField fx:id="cmbCodigo3" layoutX="264.0" layoutY="76.0" prefHeight="25.0" prefWidth="264.0" promptText="Ingrese el costo unitario" />
+      <Label layoutX="220.0" layoutY="178.0" text="Descripcion">
+         <font>
+            <Font name="Times New Roman" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="cmbCodigo21" layoutX="187.0" layoutY="196.0" prefHeight="25.0" prefWidth="167.0" promptText="Ingrese la cantidad" />
+      <Label layoutX="452.0" layoutY="178.0" text="Cantidad">
+         <font>
+            <Font name="Times New Roman" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="cmbCodigo211" layoutX="396.0" layoutY="196.0" prefHeight="25.0" prefWidth="167.0" promptText="Ingrese la cantidad" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ReporteUsuarios" language="groovy" pageWidth="612" pageHeight="792" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="15efbb2c-3968-4089-9232-efaf46220794">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="144"/>
+	<queryString>
+		<![CDATA[sp_ListarUsuarios]]>
+	</queryString>
+	<field name="codigoUsuario" class="java.lang.Integer"/>
+	<field name="nombreUsuario" class="java.lang.String"/>
+	<field name="email" class="java.lang.String"/>
+	<field name="usuario" class="java.lang.String"/>
+	<field name="contrasena" class="java.lang.String"/>
+	<field name="TipoDeUsuario" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="106" splitType="Stretch">
+			<line>
+				<reportElement x="297" y="55" width="251" height="1" uuid="920550de-76ae-4cd3-9669-ba832f2eaed7"/>
+			</line>
+			<rectangle>
+				<reportElement x="0" y="0" width="572" height="106" backcolor="#000000" uuid="0bb0c409-d59f-4d52-8afc-59d8a6deaf38"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="288" y="12" width="260" height="44" backcolor="#F57C2B" uuid="5aba104e-3e3c-49e4-96e1-7a54937f333f"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="297" y="13" width="251" height="43" forecolor="#FFFFFF" uuid="e250828d-077f-4ea9-99fa-888087023087"/>
+				<textElement>
+					<font fontName="Segoe UI Black" size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Reporte Usuarios]]></text>
+			</staticText>
+			<image>
+				<reportElement x="25" y="13" width="217" height="87" uuid="8fd45b6c-0eb7-4403-b2a5-c55da94dae89"/>
+				<imageExpression><![CDATA["C:\\Users\\informatica\\Desktop\\Mencos Chamalé, Oscar Ronaldo IN5AM 2017013\\NextSport2017013\\src\\org\\oscarmencos\\image\\Reporte.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="60" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="37" splitType="Stretch">
+			<rectangle>
+				<reportElement stretchType="RelativeToTallestObject" x="10" y="17" width="550" height="20" backcolor="#3399FF" uuid="85aba44b-cb9e-4987-9e16-c1016c545adb"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="337" y="17" width="100" height="20" forecolor="#FFFFFF" uuid="f4847dca-a437-43ab-9f2f-586744615b7e"/>
+				<textElement>
+					<font fontName="Century" size="16"/>
+				</textElement>
+				<text><![CDATA[Contrasena]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="269" y="17" width="55" height="20" forecolor="#FFFFFF" uuid="321ee013-ca3a-4da2-85b1-cb96da91332d"/>
+				<textElement>
+					<font fontName="Century" size="16"/>
+				</textElement>
+				<text><![CDATA[Email]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="460" y="17" width="100" height="20" forecolor="#FFFFFF" uuid="0bbacc0b-09e3-48d8-9d7f-e4261cccaaa3"/>
+				<textElement>
+					<font fontName="Century" size="16"/>
+				</textElement>
+				<text><![CDATA[TipoDeUsuario]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="179" y="17" width="71" height="20" forecolor="#FFFFFF" uuid="8a217415-c840-4ebd-b86f-5665e5ae9416"/>
+				<textElement>
+					<font fontName="Century" size="16"/>
+				</textElement>
+				<text><![CDATA[Usuario]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="25" y="17" width="135" height="20" forecolor="#FFFFFF" uuid="9c6aea49-491c-4999-a6ea-e6884ab02e6c"/>
+				<textElement>
+					<font fontName="Century" size="16"/>
+				</textElement>
+				<text><![CDATA[Nombre Usuario]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="127" splitType="Stretch">
+			<textField>
+				<reportElement x="250" y="64" width="74" height="20" uuid="d489a29d-8ca9-4b76-9c2b-3ee430dd15f0"/>
+				<textElement>
+					<font fontName="Lucida Fax" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{email}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="324" y="64" width="113" height="20" uuid="53757ae6-3798-41cd-94bf-8877831699a9"/>
+				<textElement>
+					<font fontName="Lucida Fax" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{contrasena}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="437" y="64" width="135" height="20" uuid="25d2f095-7385-4a72-836f-bc0e75d476e4"/>
+				<textElement>
+					<font fontName="Lucida Fax" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{TipoDeUsuario}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="0" y="95" width="572" height="1" uuid="3781cee9-e1b4-4715-aa2b-e29189ef1a21"/>
+			</line>
+			<textField>
+				<reportElement x="164" y="64" width="78" height="20" uuid="f24d0495-0068-461f-a69a-02d44880e02d"/>
+				<textElement>
+					<font fontName="Lucida Fax" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{usuario}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="10" y="64" width="162" height="20" uuid="8dd579e3-5eab-46f8-aaff-d8e981de1ae5"/>
+				<textElement>
+					<font fontName="Lucida Fax" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nombreUsuario}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="94" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch">
+			<staticText>
+				<reportElement x="10" y="21" width="169" height="20" uuid="8848186d-8066-41cd-ae0a-789c5fb0caf9"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[NextSportApplication]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

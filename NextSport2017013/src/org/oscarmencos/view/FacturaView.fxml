@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="194.0" layoutY="14.0" text="Tabla Facturas">
+         <font>
+            <Font name="Times New Roman" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="59.0" layoutY="72.0" text="Numero Factura">
+         <font>
+            <Font name="Times New Roman" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="57.0" layoutY="103.0" text="Estado">
+         <font>
+            <Font name="Times New Roman" size="15.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="txtDescripcion" layoutX="255.0" layoutY="68.0" prefHeight="25.0" prefWidth="264.0" promptText="--------------------- Codigo --------------" />
+      <TextField fx:id="cmbCodigo" layoutX="255.0" layoutY="99.0" prefHeight="25.0" prefWidth="264.0" promptText="Ingrese el estado de la factura" />
+      <TableView layoutX="18.0" layoutY="234.0" prefHeight="200.0" prefWidth="566.0">
+        <columns>
+          <TableColumn prefWidth="108.0" text="Numero Factura" />
+          <TableColumn prefWidth="97.0" text="Estado" />
+            <TableColumn prefWidth="111.0" text="Fecha" />
+            <TableColumn prefWidth="119.0" text="NIT" />
+            <TableColumn prefWidth="125.0" text="Total" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnNuevo" layoutX="44.0" layoutY="443.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="93.0" text="Nuevo" />
+      <Button fx:id="btnEliminar" layoutX="183.0" layoutY="443.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="93.0" text="Eliminar" />
+      <Button fx:id="btnEditar" layoutX="331.0" layoutY="443.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="93.0" text="Editar" />
+      <Button fx:id="btnReporte" layoutX="464.0" layoutY="443.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="93.0" text="Reporte" />
+      <Label layoutX="59.0" layoutY="136.0" text="Fecha">
+         <font>
+            <Font name="Times New Roman" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="57.0" layoutY="170.0" text="NIT">
+         <font>
+            <Font name="Times New Roman" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="54.0" layoutY="200.0" text="Total">
+         <font>
+            <Font name="Times New Roman" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="cmbCodigo1" layoutX="255.0" layoutY="132.0" prefHeight="25.0" prefWidth="264.0" promptText="Ingrese la fecha de la factura" />
+      <TextField fx:id="cmbCodigo2" layoutX="255.0" layoutY="166.0" prefHeight="25.0" prefWidth="264.0" promptText="Ingrese el NIT de la factura" />
+      <TextField fx:id="cmbCodigo21" layoutX="255.0" layoutY="196.0" prefHeight="25.0" prefWidth="264.0" promptText="Ingrese el total de la factura" />
+      <Button layoutX="488.0" layoutY="22.0" mnemonicParsing="false" onAction="#menuPrincipal" text="Menu Principal" />
+   </children>
+</AnchorPane>

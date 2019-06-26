@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="470.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="146.0" layoutY="14.0" text="Tabla Detalle Factura">
+         <font>
+            <Font name="Times New Roman" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="65.0" layoutY="83.0" text="Codigo Detalle Factura">
+         <font>
+            <Font name="Times New Roman" size="15.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="txtDescripcion" layoutX="293.0" layoutY="82.0" prefHeight="23.0" prefWidth="264.0" promptText="--------------------- Codigo --------------" />
+      <Label layoutX="65.0" layoutY="117.0" text="Precio">
+         <font>
+            <Font name="Times New Roman" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="cmbCodigo" layoutX="293.0" layoutY="116.0" prefHeight="25.0" prefWidth="264.0" promptText="Ingrese el precio de la factura" />
+      <TableView layoutX="21.0" layoutY="197.0" prefHeight="177.0" prefWidth="561.0">
+        <columns>
+          <TableColumn prefWidth="159.0" text="Codigo" />
+          <TableColumn prefWidth="225.0" text="Cantidad" />
+            <TableColumn prefWidth="176.0" text="Precio" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnNuevo" layoutX="48.0" layoutY="405.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="93.0" text="Nuevo" />
+      <Button fx:id="btnEliminar" layoutX="200.0" layoutY="409.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="93.0" text="Eliminar" />
+      <Button fx:id="btnEditar" layoutX="344.0" layoutY="409.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="93.0" text="Editar" />
+      <Button fx:id="btnReporte" layoutX="467.0" layoutY="405.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="93.0" text="Reporte" />
+      <Label layoutX="65.0" layoutY="152.0" text="Cantidad">
+         <font>
+            <Font name="Times New Roman" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="cmbCodigo1" layoutX="293.0" layoutY="149.0" prefHeight="25.0" prefWidth="264.0" promptText="Ingrese la cantidad de la factura" />
+   </children>
+</AnchorPane>

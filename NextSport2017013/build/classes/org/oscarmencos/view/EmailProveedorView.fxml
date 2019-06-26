@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="500.0" style="-fx-background-color: #4682B4;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.oscarmencos.controller.EmailProveedorController">
+   <children>
+      <TextField fx:id="txtEmail" editable="false" layoutX="259.0" layoutY="76.0" prefHeight="25.0" prefWidth="186.0" />
+      <TextField fx:id="txtDescripcion" editable="false" layoutX="259.0" layoutY="136.0" prefHeight="25.0" prefWidth="186.0" />
+      <ComboBox fx:id="cmbProveedor" disable="true" layoutX="259.0" layoutY="188.0" prefHeight="25.0" prefWidth="186.0" promptText="----------Codigo---------" />
+      <Button fx:id="btnNuevo" layoutX="113.0" layoutY="242.0" mnemonicParsing="false" onAction="#nuevo" prefHeight="38.0" prefWidth="90.0" text="Nuevo">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect></Button>
+      <Button fx:id="btnEliminar" layoutX="294.0" layoutY="242.0" mnemonicParsing="false" onAction="#eliminar" prefHeight="38.0" prefWidth="90.0" text="Regresar">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect></Button>
+      <Label layoutX="54.0" layoutY="88.0" text="Email" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="54.0" layoutY="139.0" text="Descripcion" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="54.0" layoutY="191.0" text="Codigo Proveedor" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="195.0" layoutY="29.0" text="Email Proveedores" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman" size="22.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

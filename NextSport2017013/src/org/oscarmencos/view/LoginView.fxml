@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #A52A2A; -fx-border-color: white; -fx-background-size: 500;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.oscarmencos.controller.LoginController">
+   <children>
+      <Label layoutX="202.0" layoutY="77.0" text="Bienvenido" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman" size="45.0" />
+         </font>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Label>
+      <Label layoutX="134.0" layoutY="170.0" text="Usuario" textFill="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Label>
+      <Label layoutX="134.0" layoutY="223.0" text="Contraseña" textFill="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Label>
+      <TextField fx:id="txtNombreUsuario" layoutX="320.0" layoutY="176.0" prefHeight="25.0" prefWidth="178.0" promptText="USERNAME" />
+      <Button fx:id="btnIngresar" layoutX="31.0" layoutY="326.0" mnemonicParsing="false" onAction="#Login" prefHeight="43.0" prefWidth="115.0" text="INGRESAR">
+         <font>
+            <Font name="Times New Roman" size="17.0" />
+         </font>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+      <Button fx:id="btnRegistrar" layoutX="166.0" layoutY="326.0" mnemonicParsing="false" onAction="#ventanaRegistro" prefHeight="43.0" prefWidth="125.0" text="REGISTRAR">
+         <font>
+            <Font name="Times New Roman" size="17.0" />
+         </font>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+      <Button fx:id="btnCancelar" layoutX="306.0" layoutY="326.0" mnemonicParsing="false" onAction="#cancelar" prefHeight="43.0" prefWidth="125.0" text="CANCELAR">
+         <font>
+            <Font name="Times New Roman" size="17.0" />
+         </font>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+      <Button fx:id="btnReporte" disable="true" layoutX="445.0" layoutY="326.0" mnemonicParsing="false" onAction="#reporte" prefHeight="43.0" prefWidth="106.0" text="REPORTE">
+         <font>
+            <Font name="Times New Roman" size="17.0" />
+         </font>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+      <ComboBox fx:id="cmbTipoDeUsuario" layoutX="320.0" layoutY="270.0" prefHeight="25.0" prefWidth="178.0" promptText="TIPO DE USUARIO" />
+      <PasswordField fx:id="pssContrasena" layoutX="320.0" layoutY="229.0" prefHeight="25.0" prefWidth="178.0" promptText="PASSWORD" />
+      <Button fx:id="btnCerrar" layoutX="504.0" layoutY="14.0" mnemonicParsing="false" onAction="#cerrar" prefHeight="36.0" prefWidth="69.0" text="CERRAR">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+         <font>
+            <Font name="Times New Roman" size="12.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="96.0" fitWidth="125.0" layoutX="31.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/Login.png" />
+         </image>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </ImageView>
+   </children>
+</AnchorPane>

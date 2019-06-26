@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: #4682B4;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.oscarmencos.controller.CompraController">
+   <children>
+      <Label layoutX="191.0" layoutY="8.0" text="Tabla Compras" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="48.0" layoutY="68.0" prefHeight="18.0" prefWidth="138.0" text="Numero Documento" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="48.0" layoutY="104.0" prefHeight="18.0" prefWidth="76.0" text="Descripcion" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman" size="15.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cmbProveedor" disable="true" layoutX="251.0" layoutY="184.0" prefHeight="25.0" prefWidth="264.0" promptText="--------------------- Codigo --------------" />
+      <TextField fx:id="txtDescripcion" layoutX="251.0" layoutY="101.0" prefHeight="25.0" prefWidth="264.0" promptText="Ingrese la direccion de el documento" />
+      <TableView fx:id="tblCompras" layoutX="19.0" layoutY="218.0" prefHeight="200.0" prefWidth="564.0">
+        <columns>
+          <TableColumn fx:id="colNumeroDocumento" prefWidth="140.0" text="Numero Documento" />
+          <TableColumn fx:id="colDescripcion" prefWidth="155.0" text="Descripcion" />
+            <TableColumn fx:id="colFecha" prefWidth="146.0" text="Fecha" />
+            <TableColumn fx:id="colTotal" prefWidth="122.0" text="Total" />
+        </columns>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </TableView>
+      <Button fx:id="btnNuevo" layoutX="40.0" layoutY="437.0" mnemonicParsing="false" onAction="#nuevo" prefHeight="32.0" prefWidth="93.0" text="Nuevo">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect></Button>
+      <Button fx:id="btnEliminar" layoutX="151.0" layoutY="437.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="93.0" text="Eliminar">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect></Button>
+      <Button fx:id="btnEditar" layoutX="275.0" layoutY="437.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="93.0" text="Editar">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect></Button>
+      <Button fx:id="btnReporte" layoutX="393.0" layoutY="437.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="93.0" text="Reporte">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect></Button>
+      <Label layoutX="48.0" layoutY="135.0" prefHeight="18.0" prefWidth="48.0" text="Fecha" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="48.0" layoutY="166.0" prefHeight="18.0" prefWidth="96.0" text="Razon Social" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtNumeroDocumento" layoutX="251.0" layoutY="56.0" prefHeight="25.0" prefWidth="264.0" promptText="Ingrese el total de el documento" />
+      <Button layoutX="499.0" layoutY="437.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="93.0" text="Detalle">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect></Button>
+      <GridPane fx:id="grdFecha" layoutX="275.0" layoutY="130.0" prefHeight="46.0" prefWidth="172.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+      </GridPane>
+      <Button layoutX="486.0" layoutY="16.0" mnemonicParsing="false" onAction="#menuPrincipal" text="Menu Principal" />
+   </children>
+</AnchorPane>

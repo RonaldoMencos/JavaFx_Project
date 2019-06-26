@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="500.0" style="-fx-background-color: #4682B4;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.oscarmencos.controller.TelefonoProveedorController">
+   <children>
+      <Label layoutX="149.0" layoutY="24.0" prefHeight="25.0" prefWidth="249.0" text="Telefono Proveedores" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="48.0" layoutY="86.0" text="Numero" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="48.0" layoutY="131.0" text="Descripcion" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="48.0" layoutY="176.0" text="Codigo Proveedor" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman" size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnNuevo" layoutX="123.0" layoutY="252.0" mnemonicParsing="false" onAction="#nuevo" prefHeight="38.0" prefWidth="90.0" text="Nuevo">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnEliminar" layoutX="308.0" layoutY="252.0" mnemonicParsing="false" onAction="#eliminar" prefHeight="38.0" prefWidth="90.0" text="Regresar">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <TextField fx:id="txtNumero" editable="false" layoutX="244.0" layoutY="83.0" prefHeight="25.0" prefWidth="186.0" />
+      <TextField fx:id="txtDescripcion" editable="false" layoutX="244.0" layoutY="128.0" prefHeight="25.0" prefWidth="186.0" />
+      <ComboBox fx:id="cmbProveedor" disable="true" layoutX="244.0" layoutY="173.0" prefHeight="25.0" prefWidth="186.0" promptText="----------Codigo---------" />
+   </children>
+</AnchorPane>

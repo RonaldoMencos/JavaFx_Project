@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.input.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="403.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.oscarmencos.controller.MenuPrincipalController">
+   <children>
+      <ImageView fitHeight="267.0" fitWidth="446.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/Logo.png" />
+         </image>
+      </ImageView>
+      <MenuBar>
+        <menus>
+          <Menu mnemonicParsing="false" text="Modulos">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#ventanaCategorias" text="Categorias " />
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaMarcas" text="Marcas" />
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaTallas" text="Tallas" />
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaProductos" text="Productos" />
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaProveedores" text="Proveedores" />
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaClientes" text="Clientes" />
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaCompras" text="Compras" />
+            </items>
+               <accelerator>
+                  <KeyCodeCombination alt="UP" code="SPACE" control="ANY" meta="UP" shift="UP" shortcut="UP" />
+               </accelerator>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Reportes">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Reporte Productos" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Ayuda">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Acerca de" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Button fx:id="btnCerrar" layoutX="314.0" layoutY="2.0" mnemonicParsing="false" onAction="#cerrar" text="Cerrar Sesion" />
+   </children>
+</AnchorPane>
